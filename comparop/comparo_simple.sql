@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Structure de la table `admin`
 --
 
-CREATE TABLE `admin` (
+CREATE TABLE IF NOT EXISTS `admin` (
   `id` int(11) NOT NULL,
   `pseudo` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -36,7 +36,7 @@ CREATE TABLE `admin` (
 -- Déchargement des données de la table `admin`
 --
 
-INSERT INTO `admin` (`id`, `pseudo`, ) VALUES
+INSERT INTO `admin` (`id`, `pseudo`) VALUES
 (1, 'Marion'),
 (2, 'syluxs');
 
@@ -46,7 +46,7 @@ INSERT INTO `admin` (`id`, `pseudo`, ) VALUES
 -- Structure de la table `destination`
 --
 
-CREATE TABLE `destination` (
+CREATE TABLE IF NOT EXISTS `destination` (
     `id` int(11) NOT NULL,
     `location` varchar(255) NOT NULL,
     `price` int(11) NOT NULL,
@@ -66,7 +66,7 @@ INSERT INTO `destination` (`id`, `location`, `price`,`tour_operator_id`) VALUES
 (6,'Port-Grimaud',120,2),
 (7,'Bangkok',1000,1),
 (8,'Katmandou',1200,3),
-(9,'Bubaque-Island'3000,1),
+(9,'Bubaque-Island',3000,1),
 (10,'Hong-Kong',1500,3);
 
 -- --------------------------------------------------------
@@ -75,7 +75,7 @@ INSERT INTO `destination` (`id`, `location`, `price`,`tour_operator_id`) VALUES
 -- Structure de la table `review`
 --
 
-CREATE TABLE `review` (
+CREATE TABLE IF NOT EXISTS `review` (
   `id` int(11) NOT NULL,
   `message` text NOT NULL,
   `author` varchar(255) NOT NULL,

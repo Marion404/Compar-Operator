@@ -78,10 +78,6 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
             <a class="nav-link" href="#">Hôtels</a>
           </li>
         </ul>
-        <form class="d-flex" role="recherche">
-          <input class="form-control me-2" type="search" placeholder="recherche" aria-label="recherche">
-          <button class="btn btn-outline-warning" type="submit">Chercher</button>
-        </form>
       </div>
     </div>
   </nav>
@@ -113,6 +109,7 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
                   </div>
                 </div>
               </div>
@@ -127,6 +124,7 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
                   </div>
                 </div>
               </div>
@@ -141,6 +139,7 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
                   </div>
                 </div>
               </div>
@@ -156,6 +155,7 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
                   </div>
                 </div>
               </div>
@@ -170,6 +170,7 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
                   </div>
                 </div>
               </div>
@@ -184,6 +185,7 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
                   </div>
                 </div>
               </div>
@@ -199,6 +201,7 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
                   </div>
                 </div>
               </div>
@@ -213,6 +216,7 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
                   </div>
                 </div>
               </div>
@@ -227,6 +231,7 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
                   </div>
                 </div>
               </div>
