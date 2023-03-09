@@ -109,7 +109,8 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
+                    <a href="list_tour_operator.php?destination=Bangkok" class="btn btn-sm btn-outline-secondary">Voir</a>
                   </div>
                 </div>
               </div>
@@ -124,7 +125,8 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
+                    <a href="list_tour_operator.php?destination=Boston" class="btn btn-sm btn-outline-secondary">Voir</a>
                   </div>
                 </div>
               </div>
@@ -139,7 +141,8 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
+                    <a href="list_tour_operator.php?destination=Braga" class="btn btn-sm btn-outline-secondary">Voir</a>
                   </div>
                 </div>
               </div>
@@ -155,7 +158,8 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
+                    <a href="list_tour_operator.php?destination=Bubaque" class="btn btn-sm btn-outline-secondary">Voir</a>
                   </div>
                 </div>
               </div>
@@ -170,7 +174,8 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
+                    <a href="list_tour_operator.php?destination=Hong Kong" class="btn btn-sm btn-outline-secondary">Voir</a>
                   </div>
                 </div>
               </div>
@@ -178,14 +183,15 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <img src="Images/kathmandu nepal 2.jpg" style="width: 100%;";>
+              <img src="Images/kathmandu nepal.jpg" style="width: 100%;";>
               <div class="card-body">
                 <p class="card-text">Katmandou, Népal</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
+                    <a href="list_tour_operator.php?destination=Katmandu" class="btn btn-sm btn-outline-secondary">Voir</a>
                   </div>
                 </div>
               </div>
@@ -201,7 +207,8 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
+                    <a href="list_tour_operator.php?destination=Saint Etienne" class="btn btn-sm btn-outline-secondary">Voir</a>
                   </div>
                 </div>
               </div>
@@ -216,7 +223,8 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
+                    <a href="list_tour_operator.php?destination=Lisbonne" class="btn btn-sm btn-outline-secondary">Voir</a>
                   </div>
                 </div>
               </div>
@@ -231,7 +239,8 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Review</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
+                    <a href="list_tour_operator.php?destination=Port Grimaud" class="btn btn-sm btn-outline-secondary">Voir</a>
                   </div>
                 </div>
               </div>

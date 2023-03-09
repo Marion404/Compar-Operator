@@ -44,7 +44,6 @@ a {
     text-decoration: none;
 }
 
-<style>
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -95,4 +94,4 @@ a {
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
-    </style>
+      

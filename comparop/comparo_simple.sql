@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Hôte : localhost:3306
--- Généré le : lun. 11 avr. 2022 à 14:23
--- Version du serveur : 5.7.33
--- Version de PHP : 8.1.2
+-- Hôte : 127.0.0.1
+-- Généré le : mer. 08 mars 2023 à 14:57
+-- Version du serveur : 10.4.27-MariaDB
+-- Version de PHP : 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -27,16 +27,18 @@ SET time_zone = "+00:00";
 -- Structure de la table `admin`
 --
 
-CREATE TABLE IF NOT EXISTS `admin` (
+CREATE TABLE `admin` (
   `id` int(11) NOT NULL,
   `pseudo` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `admin`
 --
 
 INSERT INTO `admin` (`id`, `pseudo`) VALUES
+(1, 'Marion'),
+(2, 'syluxs'),
 (1, 'Marion'),
 (2, 'syluxs');
 
@@ -46,28 +48,29 @@ INSERT INTO `admin` (`id`, `pseudo`) VALUES
 -- Structure de la table `destination`
 --
 
-CREATE TABLE IF NOT EXISTS `destination` (
-    `id` int(11) NOT NULL,
-    `location` varchar(255) NOT NULL,
-    `price` int(11) NOT NULL,
-    `tour_operator_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `destination` (
+  `id` int(11) NOT NULL,
+  `location` varchar(255) NOT NULL,
+  `price` int(11) NOT NULL,
+  `tour_operator_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Déchargement des données de la table `destination`
 --
 
-INSERT INTO `destination` (`id`, `location`, `price`,`tour_operator_id`) VALUES
-(1,'Saint-Etienne',150,1),
-(2,'Braga',200,3),
-(3,'Lisbonne',600,2),
-(4,'Boston',1000,1),
-(5,'Riquewhir',100,3),
-(6,'Port-Grimaud',120,2),
-(7,'Bangkok',1000,1),
-(8,'Katmandou',1200,3),
-(9,'Bubaque-Island',3000,1),
-(10,'Hong-Kong',1500,3);
+INSERT INTO `destination` (`id`, `location`, `price`, `tour_operator_id`) VALUES
+(1, 'Saint-Etienne', 150, 1),
+(2, 'Braga', 200, 3),
+(3, 'Lisbonne', 600, 2),
+(4, 'Boston', 1000, 1),
+(5, 'Riquewhir', 100, 3),
+(6, 'Port-Grimaud', 120, 2),
+(7, 'Bangkok', 1000, 1),
+(8, 'Katmandou', 1200, 3),
+(9, 'Bubaque-Island', 3000, 1),
+(10, 'Hong-Kong', 1500, 3),
+(11, 'Braga', 300, 2);
 
 -- --------------------------------------------------------
 
@@ -75,12 +78,12 @@ INSERT INTO `destination` (`id`, `location`, `price`,`tour_operator_id`) VALUES
 -- Structure de la table `review`
 --
 
-CREATE TABLE IF NOT EXISTS `review` (
+CREATE TABLE `review` (
   `id` int(11) NOT NULL,
   `message` text NOT NULL,
   `author` varchar(255) NOT NULL,
   `tour_operator_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Déchargement des données de la table `review`
@@ -102,10 +105,10 @@ CREATE TABLE `tour_operator` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `link` text NOT NULL,
-  `grade_count` int(11) NOT NULL DEFAULT '0',
-  `grade_total` int(11) NOT NULL DEFAULT '0',
-  `is_premium` tinyint(1) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `grade_count` int(11) NOT NULL DEFAULT 0,
+  `grade_total` int(11) NOT NULL DEFAULT 0,
+  `is_premium` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Déchargement des données de la table `tour_operator`
@@ -121,24 +124,16 @@ INSERT INTO `tour_operator` (`id`, `name`, `link`, `grade_count`, `grade_total`,
 --
 
 --
--- Index pour la table `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Index pour la table `destination`
 --
 ALTER TABLE `destination`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `destination_tour_operator` (`tour_operator_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `review`
 --
 ALTER TABLE `review`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `review_tour_operator` (`tour_operator_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `tour_operator`
@@ -151,44 +146,22 @@ ALTER TABLE `tour_operator`
 --
 
 --
--- AUTO_INCREMENT pour la table `admin`
---
-ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=;
-
---
 -- AUTO_INCREMENT pour la table `destination`
 --
 ALTER TABLE `destination`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT pour la table `review`
 --
 ALTER TABLE `review`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `tour_operator`
 --
 ALTER TABLE `tour_operator`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=;
-
-  --
--- Contraintes pour les tables déchargées
---
-
---
--- Contraintes pour la table `destination`
---
-ALTER TABLE `destination`
-  ADD CONSTRAINT `destination_tour_operator` FOREIGN KEY (`tour_operator_id`) REFERENCES `tour_operator` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Contraintes pour la table `review`
---
-ALTER TABLE `review`
-  ADD CONSTRAINT `review_tour_operator` FOREIGN KEY (`tour_operator_id`) REFERENCES `tour_operator` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
