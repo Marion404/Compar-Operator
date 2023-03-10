@@ -2,7 +2,15 @@
 
 session_start();
 
-$_SESSION['admin'] = $_POST['admin'];
+if(empty($_POST)) {
+
+}
+
+if(!empty($_SESSION['admin'])) {
+} else {
+  $_SESSION['admin'] = $_POST['admin'];
+
+}
 
 if(empty($_SESSION['admin'])) {
   header("Location: connexion.php");
@@ -15,72 +23,14 @@ if(empty($_SESSION['admin'])) {
 
 
 
-echo "Identifiant de connexion " . $_SESSION['admin'];
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Wingz</title>
-      <!-- <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img id="abeille" src="images/abeille.png" />
-          </div>
-          <a href="./"><span class="header__logo-sub" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'">Wingz</span></a>
-        </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./" class="header__link" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'"> Vols </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./#about" class="header__link" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'"> Hôtels </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./#projects" class="header__link" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'"> Voiture </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./#contact" class="header__link" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'"> Devise </a>
-            </li>
-          </ul>
-        </div>
-      </div> -->
 
-
-</head>
+<?php include('partials/header.php'); ?>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <img src="Images/abeille.png" style="width: 105px"/>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><h1>Wingz</h1></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vols</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Véhicules</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Hôtels</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<?php include('partials/navbar.php'); ?>
   <main>
 
     <section class="py-5 text-center container">
@@ -251,13 +201,6 @@ echo "Identifiant de connexion " . $_SESSION['admin'];
     </div>
 
   </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
- </form>
- 
- </div>
 
-
-</body>
-</html>  
-</body>
-</html>
+  <?php include('partials/footer.php'); ?>
+  

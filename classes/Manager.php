@@ -6,7 +6,7 @@ class Manager {
 
     public function __construct($db)
     {
-        this->db = $db;
+        $this->db = $db;
     }
 
     public function add(Review $review, TourOperator $tour_operator)
@@ -30,5 +30,16 @@ class Manager {
     {
         $reviews = [];
 
-        $q = $this->db->prepare('SELECT reviews.* FROM `reviews` JOIN tour_operator ON reviews.tour_operator_id = tour_operators.id WHERE tour_operators.id = ?)
+        $q = $this->db->prepare('SELECT reviews.* FROM `reviews` JOIN tour_operator ON reviews.tour_operator_id = tour_operators.id WHERE tour_operators.id = ?');
+    
+    $q->execute([intval($tour_operator->getId())]);
+    while ($donnees = $q->fetch(PDO: : FETCH_ASSOC))
+    {
+
+        array_push($reviews,new Review($donnees));
+
     }
+    return $reviews;
+    }
+
+}
