@@ -174,12 +174,9 @@ if(empty($_SESSION['admin'])) {
     </div>
     <div class="d-flex justify-content-end">
       <button type="button" class="btn btn-warning btn-lg">
-        <a href="#top" class="text-dark">Back to top</a>
+        <a href="#top" class="text-dark">Retour en haut</a>
       </button>
   </div>
-    
-
-
   </main>
 
   <?php include('partials/footer.php'); ?>
