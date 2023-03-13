@@ -29,7 +29,7 @@ if(empty($_SESSION['admin'])) {
 
 <?php include('partials/header.php'); ?>
 
-<body>
+<body id="top">
 <?php include('partials/navbar.php'); ?>
   <main>
 
@@ -172,7 +172,13 @@ if(empty($_SESSION['admin'])) {
         </div>
       </div>
     </div>
-    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <div class="d-flex justify-content-end">
+      <button type="button" class="btn btn-warning btn-lg">
+        <a href="#top" class="text-dark">Back to top</a>
+      </button>
+  </div>
+    
+
 
   </main>
 
