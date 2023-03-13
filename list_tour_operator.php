@@ -8,8 +8,6 @@ $stmt = $dbh->prepare("SELECT * FROM destination d JOIN tour_operator t ON d.tou
 $stmt->execute([$location]);
 $datas = $stmt->fetchAll();
 
-
-
 $stmtReview = $dbh->prepare("SELECT DISTINCT message FROM destination d JOIN tour_operator t ON d.tour_operator_id = t.id JOIN review r ON t.id = r.tour_operator_id WHERE t.id = ?");
 
 ?>

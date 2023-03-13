@@ -14,15 +14,15 @@
             Destinations
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Bangkok</a></li>
-            <li><a class="dropdown-item" href="#">Boston</a></li>
-            <li><a class="dropdown-item" href="#">Braga</a></li>
-            <li><a class="dropdown-item" href="#">Bubaque</a></li>
-            <li><a class="dropdown-item" href="#">Hong Kong</a></li>
-            <li><a class="dropdown-item" href="#">Katmandou</a></li>
-            <li><a class="dropdown-item" href="#">Saint Etienne</a></li>
-            <li><a class="dropdown-item" href="#">Lisbonne</a></li>
-            <li><a class="dropdown-item" href="#">Port Grimaud</a></li>
+            <li><a class="dropdown-item" href="#bangkok">Bangkok</a></li>
+            <li><a class="dropdown-item" href="#boston">Boston</a></li>
+            <li><a class="dropdown-item" href="#braga">Braga</a></li>
+            <li><a class="dropdown-item" href="#bubaque">Bubaque</a></li>
+            <li><a class="dropdown-item" href="#hong kong">Hong Kong</a></li>
+            <li><a class="dropdown-item" href="#katmandou">Katmandou</a></li>
+            <li><a class="dropdown-item" href="#saint etienne">Saint Etienne</a></li>
+            <li><a class="dropdown-item" href="#lisbonne">Lisbonne</a></li>
+            <li><a class="dropdown-item" href="#port grimaud">Port Grimaud</a></li>
           </ul>
         </li>
         </ul>

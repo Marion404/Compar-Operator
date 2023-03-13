@@ -51,48 +51,39 @@ if(empty($_SESSION['admin'])) {
   
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
           <div class="col">
-            <div class="card shadow-sm">
-              <img src="Images/bangkok thailand.jpg" style="width: 100%;";>
+            <div class="card shadow-sm" id="bangkok">
+              <img src="Images/bangkok thailand.jpg"  style="width: 100%;";>
               <div class="card-body">
-                <p class="card-text">Bangkok, Thailande</p>
+                <p class="card-text" >Bangkok, Thailande</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
-                    <a href="list_tour_operator.php?destination=Bangkok" class="btn btn-sm btn-outline-secondary">Voir</a>
+                    <a href="list_tour_operator.php?destination=Bangkok" class="btn btn-sm btn-outline-secondary">Voir prix, note et avis</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm" id="boston">
               <img src="Images/boston usa.jpg" style="width: 100%;";>
               <div class="card-body">
                 <p class="card-text">Boston, USA</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
-                    <a href="list_tour_operator.php?destination=Boston" class="btn btn-sm btn-outline-secondary">Voir</a>
+                    <a href="list_tour_operator.php?destination=Boston" class="btn btn-sm btn-outline-secondary">Voir prix, note et avis</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+          <div class="card shadow-sm" id="braga">
               <img src="Images/braga portugal.jpg" style="width: 100%;";>
               <div class="card-body">
                 <p class="card-text">Braga, Portugal</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
-                    <a href="list_tour_operator.php?destination=Braga" class="btn btn-sm btn-outline-secondary">Voir</a>
+                    <a href="list_tour_operator.php?destination=Braga" class="btn btn-sm btn-outline-secondary">Voir prix, note et avis</a>
                   </div>
                 </div>
               </div>
@@ -100,48 +91,39 @@ if(empty($_SESSION['admin'])) {
           </div>
   
           <div class="col">
-            <div class="card shadow-sm">
+          <div class="card shadow-sm" id="bubaque">
               <img src="Images/bubaque bijagos.jpg" style="width: 100%;";>
               <div class="card-body">
                 <p class="card-text">Bubaque, Guinée-Bissau</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
-                    <a href="list_tour_operator.php?destination=Bubaque" class="btn btn-sm btn-outline-secondary">Voir</a>
+                    <a href="list_tour_operator.php?destination=Bubaque" class="btn btn-sm btn-outline-secondary">Voir prix, note et avis</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+          <div class="card shadow-sm" id="hong kong">
               <img src="Images/hong kong.jpg" style="width: 100%;";>
               <div class="card-body">
                 <p class="card-text">Hong Kong, Chine</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
-                    <a href="list_tour_operator.php?destination=Hong Kong" class="btn btn-sm btn-outline-secondary">Voir</a>
+                    <a href="list_tour_operator.php?destination=Hong Kong" class="btn btn-sm btn-outline-secondary">Voir prix, note et avis</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+          <div class="card shadow-sm" id="katmandou">
               <img src="Images/kathmandu nepal.jpg" style="width: 100%;";>
               <div class="card-body">
                 <p class="card-text">Katmandou, Népal</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
-                    <a href="list_tour_operator.php?destination=Katmandu" class="btn btn-sm btn-outline-secondary">Voir</a>
+                    <a href="list_tour_operator.php?destination=Katmandou" class="btn btn-sm btn-outline-secondary">Voir prix, note et avis</a>
                   </div>
                 </div>
               </div>
@@ -149,48 +131,39 @@ if(empty($_SESSION['admin'])) {
           </div>
   
           <div class="col">
-            <div class="card shadow-sm">
+          <div class="card shadow-sm" id="saint etienne">
               <img src="Images/kiosque a musique st etienne france.jpg" style="width: 100%;";>
               <div class="card-body">
                 <p class="card-text">Saint Etienne, France</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
-                    <a href="list_tour_operator.php?destination=Saint Etienne" class="btn btn-sm btn-outline-secondary">Voir</a>
+                    <a href="list_tour_operator.php?destination=Saint Etienne" class="btn btn-sm btn-outline-secondary">Voir prix, note et avis</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+          <div class="card shadow-sm" id="lisbonne">
               <img src="Images/lisbonne portugal.jpg" style="width: 100%;";>
               <div class="card-body">
                 <p class="card-text">Lisbonne, Portugal</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
-                    <a href="list_tour_operator.php?destination=Lisbonne" class="btn btn-sm btn-outline-secondary">Voir</a>
+                    <a href="list_tour_operator.php?destination=Lisbonne" class="btn btn-sm btn-outline-secondary">Voir prix, note et avis</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+          <div class="card shadow-sm" id="port grimaud">
               <img src="Images/port grimaud france.jpg" style="width: 100%;";>
               <div class="card-body">
                 <p class="card-text">Port Grimaud, France</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Note</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Prix</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Reviews</button>
-                    <a href="list_tour_operator.php?destination=Port Grimaud" class="btn btn-sm btn-outline-secondary">Voir</a>
+                    <a href="list_tour_operator.php?destination=Port Grimaud" class="btn btn-sm btn-outline-secondary">Voir prix, note et avis</a>
                   </div>
                 </div>
               </div>
@@ -199,6 +172,7 @@ if(empty($_SESSION['admin'])) {
         </div>
       </div>
     </div>
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
 
   </main>
 
